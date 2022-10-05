@@ -7,7 +7,7 @@ import Routepage from "./routes/Routepage";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
        <Nav/> 
        <Routepage/>
       </div>

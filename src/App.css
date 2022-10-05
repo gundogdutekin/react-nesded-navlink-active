@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,24 +31,64 @@ nav ul{
 }
 nav ul li{
   margin: 0 10px;
-  padding:3px;
-  background-color: rgb(75, 181, 75);
-  border:1px solid rgb(75, 181, 75);
-  border-radius: 5px;
+  
 }
-nav ul li:hover{
+.users{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  justify-content: center;
+  
+}
+.users ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-between;
+  width: 90vw;
+  list-style: none;
+  
+}
+.users ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.userLink{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.isActive{
+  background-color: rgb(151, 201, 151);
+  border:1px solid rgb(151, 201, 151);
+  border-radius: 4px;
+  color: rgb(31, 29, 29);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px;
+}
+.isPassive{
+  background-color: rgb(151, 201, 151);
+  border:1px solid rgb(151, 201, 151);
+  border-radius: 4px;
+  color: rgb(104, 101, 101);
+  text-decoration: none;
+  padding: 3px;
+}
+.isPassive:hover{
   background-color: rgb(115, 218, 115);
   border:1px solid rgb(75, 181, 75);
   
 }
-.isActive{
-  color: rgb(31, 29, 29);
+.colorLink{
+  color: rgb(254, 250, 250);
   text-decoration: none;
-  font-weight: bold;
-}
-.isPassive{
-  color: rgb(104, 101, 101);
-  text-decoration: none;
+  font-weight:bold ;
 }
 .detailInfo{
   font-size: 1rem;
@@ -51,6 +100,10 @@ nav ul li:hover{
 }
 .adresInfoItem{
   margin-left: 20px;
+}
+.post{
+  text-align: left !important;
+  width: 80vw;
 }
 .App-header {
   background-color: #282c34;

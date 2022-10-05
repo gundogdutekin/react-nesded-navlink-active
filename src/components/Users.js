@@ -15,16 +15,16 @@ function Users() {
   }, [])
 
   return (
-    <div>
+    <div className="users">
       <h1>Users</h1>
       <ul>
         {users.map((user) => (
           <li key={user.id}>
             {user.name} 
-            
-            <NavLink  className={isActive=>isActive ? "isActive" : ""} to={`${url}/posts/${user.id}`}><span className='ml10'>Posts</span></NavLink>
-            <NavLink  className={isActive=>isActive ? " isActive" : ""} to={`${url}/${user.id}`}><span className='ml10'>Detail</span></NavLink>
-           
+            <span className="userLink">
+              <NavLink  className={isActive=>isActive ? "isActive ml10" : "colorLink isPassive ml10"} to={`${url}/posts/${user.id}`}><span >Posts</span></NavLink> 
+              <NavLink  className={isActive=>isActive ? "isActive ml10" : "colorLink isPassive ml10"} to={`${url}/${user.id}`}><span >Detail</span></NavLink>
+            </span>
             
           </li>
         ))}

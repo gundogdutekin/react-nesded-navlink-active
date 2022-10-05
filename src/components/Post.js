@@ -19,7 +19,7 @@ function Post() {
       <h3>User's Posts</h3>
       {loading && <div>loading...</div>}
       {!loading && posts.map((post) => (
-        <code key={post.id}>{ <code>{post.body}</code>}</code>
+        <div className='post' key={post.id}>{post.body}</div>
       ))}
     </>
   )
