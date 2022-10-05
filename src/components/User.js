@@ -43,7 +43,7 @@ function User() {
       {!loading && (
         <div>
           <NavLink
-            className={(isActive) => (isActive ? ' isActive' : '')}
+            className={(isActive) => (isActive ? ' isActive' : 'isPassive')}
             to={`/users/${parseInt(id) + 1}`}
           >
             Next User({parseInt(id) + 1})

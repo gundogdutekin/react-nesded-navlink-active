@@ -7,13 +7,13 @@ function Nav() {
       <nav>
         <ul>
           <li>
-            <NavLink exact  className={isActive=>isActive ? " isActive" : ""} to='/'>Home</NavLink>
+            <NavLink exact  className={isActive=>isActive ? " isActive" : "isPassive"} to='/'>Home</NavLink>
           </li>
           <li>
-            <NavLink exact  className={isActive=>isActive ? " isActive" : ""} to='/about'>About</NavLink>
+            <NavLink exact  className={isActive=>isActive ? " isActive" : "isPassive"} to='/about'>About</NavLink>
           </li>
           <li>
-            <NavLink  className={isActive=>isActive ? " isActive" : ""} to='/users'>Users</NavLink>
+            <NavLink  className={isActive=>isActive ? " isActive" : "isPassive"} to='/users'>Users</NavLink>
           </li>
         </ul>
       </nav>

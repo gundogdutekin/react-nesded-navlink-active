@@ -14,8 +14,32 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  
+}
+nav ul li{
+  margin: 0 10px;
+  padding:3px;
+  background-color: rgb(75, 181, 75);
+  border:1px solid rgb(75, 181, 75);
+  border-radius: 5px;
+}
+nav ul li:hover{
+  background-color: rgb(115, 218, 115);
+  border:1px solid rgb(75, 181, 75);
+  
+}
 .isActive{
-  color: red;
+  color: rgb(31, 29, 29);
+  text-decoration: none;
+  font-weight: bold;
+}
+.isPassive{
+  color: rgb(104, 101, 101);
+  text-decoration: none;
 }
 .detailInfo{
   font-size: 1rem;
